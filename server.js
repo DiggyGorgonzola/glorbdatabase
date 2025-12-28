@@ -1,0 +1,18 @@
+
+// CLANKA SHIT
+const express = require("express");
+const app = express();
+
+app.get("/data", (req, res) => {
+  res.json({
+    message: "Hello from my server!",
+    time: Date.now()
+  });
+});
+
+const PORT = 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
+// END CLANKA SHIT
+// I have no clue how to do this so this is just... a tutorial basically :3
